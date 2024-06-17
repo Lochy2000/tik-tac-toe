@@ -28,6 +28,8 @@ window.addEventListener('DOMcontentnLoaded', () => {
         [2, 4, 6],
     ];
 
+
+    
     function handleResultValidation() {
         let roundWon = false;
         for (let i = 0; i <=7; i++) {
@@ -67,6 +69,10 @@ window.addEventListener('DOMcontentnLoaded', () => {
         }
         announcer.classList.remove('hide');
     };
+
+    const updateBoard = (index) => {
+        board[index] = currentPlayer;
+    }
 
     const changePlayer = () => {
         playerDispaly.classList.remove(`player${currentPlayer}`);
