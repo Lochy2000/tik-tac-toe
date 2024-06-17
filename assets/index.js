@@ -70,6 +70,14 @@ window.addEventListener('DOMcontentnLoaded', () => {
         announcer.classList.remove('hide');
     };
 
+    const isValidAction = (tile) => {
+        if (tile.innerText === 'X' || tile.innerText === 'O'){
+            return false;
+        }
+
+        return true;
+    };
+
     const updateBoard = (index) => {
         board[index] = currentPlayer;
     }
@@ -90,6 +98,8 @@ window.addEventListener('DOMcontentnLoaded', () => {
             changePlayer();
         }
     }
+    
+    
 
     tiles.forEach((tile, index) => {
         tile.addEventListener('click', () => userAction(tile, index));
