@@ -15,4 +15,5 @@
    "files.autoSave": "off",
    "workbench.colorTheme": "Tomorrow Night Blue",
    "terminal.integrated.gpuAcceleration": "canvas",
+   "liveServer.settings.port": 5501,
 }
